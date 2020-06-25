@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteBack"
+    tools:context=".Registration">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:src="@color/green" />
+
+    <ImageView
+        android:layout_width="10dp"
+        android:layout_height="match_parent"
+        android:src="@color/green"
+        android:layout_alignParentLeft="true"/>
+
+    <ImageView
+        android:layout_width="10dp"
+        android:layout_height="match_parent"
+        android:src="@color/green"
+        android:layout_alignParentRight="true"
+         />
+
+    <ImageView
+        android:id="@+id/imgBottom"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:src="#ffff"
+        android:layout_alignParentBottom="true"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:layout_above="@+id/imgBottom"
+        android:src="@color/green" />
+
+
+    <ImageView
+        android:id="@+id/imgTop"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:src="@drawable/img"
+        android:layout_alignParentTop="true"/>
+    <Button
+        android:id="@+id/btnShop"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="@string/shop_to_online"
+        android:layout_below="@id/imgTop"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:textSize="8sp"
+        android:padding="5sp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:background="@color/lightblue"/>
+    <Button
+        android:id="@+id/btnDelivery"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="@string/delivery_partner"
+        android:layout_below="@id/imgTop"
+        android:layout_toLeftOf="@+id/btnShop"
+        android:textSize="8sp"
+        android:padding="5sp"
+        android:background="@color/lightblue"
+        android:layout_marginRight="8dp"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_below="@id/btnDelivery"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:background="#D3D1D1"/>
+    <TextView
+        android:id="@+id/txtregistration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/customer_registration"
+        android:layout_below="@id/btnDelivery"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="5dp"
+        android:textSize="11sp"
+        android:textColor="#000000"/>
+    <RadioButton
+        android:id="@+id/rdAdhar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/i_have_aadhar_card"
+        android:layout_below="@id/txtregistration"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"/>
+    <RadioButton
+        android:id="@+id/rdNoAdhar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I don't have Aadhar card"
+        android:layout_below="@id/txtregistration"
+        android:layout_toRightOf="@id/rdAdhar"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:id="@+id/etID"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:hint="@string/enter_your_aadhar_id"
+        android:layout_below="@id/rdAdhar"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="28dp"/>
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:hint="Enter Your Name*"
+        android:layout_below="@id/etID"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="28dp"/>
+    <EditText
+        android:id="@+id/etAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:hint="Enter Your Address      "
+        android:layout_below="@id/etName"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="28dp"/>
+    <EditText
+        android:id="@+id/etPincode"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:hint="Pin code              "
+        android:layout_below="@id/etName"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="28dp"
+        android:layout_alignParentRight="true"/>
+    <EditText
+        android:id="@+id/etNumber"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:hint="Enter Your Number*"
+        android:layout_below="@id/etAddress"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="28dp"/>
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:hint="Enter Email id"
+        android:layout_below="@id/etNumber"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="28dp"/>
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:hint="Enter Password*"
+        android:layout_below="@id/etEmail"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="28dp"/>
+    <EditText
+        android:id="@+id/etRePassword"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:hint="Re-enter Password*"
+        android:layout_below="@id/etPassword"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="28dp"/>
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:text="Register"
+        android:background="@color/green"
+        android:layout_below="@id/etRePassword"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:src="@drawable/imgdown"
+        android:layout_alignParentBottom="true"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registration"
+    android:background="@color/whiteBack">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:src="@color/green" />
+
+    <ImageView
+        android:layout_width="10dp"
+        android:layout_height="match_parent"
+        android:src="@color/green"
+        android:layout_alignParentLeft="true"/>
+    <ImageView
+        android:layout_width="10dp"
+        android:layout_height="match_parent"
+        android:src="@color/green"
+        android:layout_alignParentRight="true"/>
+
+    <ImageView
+        android:id="@+id/imgBottom"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:src="#ffff"
+        android:layout_alignParentBottom="true"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:layout_above="@+id/imgBottom"
+        android:src="@color/green" />
+
+
+    <ImageView
+        android:id="@+id/imgTop"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:src="@drawable/img"
+        android:layout_alignParentTop="true"/>
+    <ImageView
+        android:id="@+id/imgsProgress3"
+        android:layout_width="320dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/imgTop"
+        android:src="@drawable/sprogress3"
+        android:layout_centerInParent="true" />
+    <ImageView
+        android:id="@+id/imgShowInterior"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="20dp"
+        android:background="@color/blueButton"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/imgsProgress3"
+        android:layout_centerInParent="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Interior Images"
+        android:layout_below="@id/imgsProgress3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/whiteBack"/>
+    <ImageView
+        android:id="@+id/imgShowFront"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="40dp"
+        android:background="@color/green"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/imgsProgress3"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Front Image"
+        android:layout_below="@id/imgShowInterior"
+        android:layout_marginTop="5dp"
+        android:textSize="12dp"
+        android:layout_marginLeft="49dp"
+        android:textColor="@color/whiteBack"/>
+    <TextView
+        android:id="@+id/txtShopname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Sastha Hyper Mall"
+        android:textColor="#000000"
+        android:layout_toRightOf="@id/imgShowFront"
+        android:layout_below="@id/imgShowInterior"/>
+    <TextView
+        android:id="@+id/txtSAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="Bathlapalli,Tamilnadu,635109"
+        android:layout_toRightOf="@id/imgShowFront"
+        android:layout_below="@id/txtShopname"/>
+    <TextView
+        android:id="@+id/txtSMobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="123456789"
+        android:layout_toRightOf="@id/imgShowFront"
+        android:layout_below="@id/txtSAddress"/>
+    <TextView
+        android:id="@+id/txtSEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:layout_toRightOf="@id/txtSMobile"
+        android:layout_below="@id/txtSAddress"/>
+    <TextView
+        android:id="@+id/txtOwner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Owner Details"
+        android:textSize="16sp"
+        android:layout_below="@id/imgShowFront"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#000000"/>
+    <TextView
+        android:id="@+id/txtname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtOwner"
+        android:text="Name"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"/>
+
+    <TextView
+        android:id="@+id/txtSname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtOwner"
+        android:layout_marginStart="115dp"
+        android:textStyle="bold"
+        android:text="ABC"
+        android:textColor="#000000"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/txtname" />
+
+    <TextView
+        android:id="@+id/txtAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtname"
+        android:text="Address"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"/>
+    <TextView
+        android:id="@+id/txtSellerAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtSname"
+        android:layout_toRightOf="@id/txtAddress"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"
+        android:text="Abhgujii,456251"
+        android:layout_marginLeft="100dp"/>
+    <TextView
+        android:id="@+id/txtMobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtAddress"
+        android:text="Mobile No"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"/>
+
+    <TextView
+        android:id="@+id/txtSmobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtSellerAddress"
+        android:layout_marginLeft="87dp"
+        android:text="1234567890"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"
+        android:layout_toRightOf="@id/txtMobile" />
+
+    <TextView
+        android:id="@+id/txtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtMobile"
+        android:text="Email ID"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"/>
+    <TextView
+        android:id="@+id/txtFEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtSmobile"
+        android:text="xyz@xyz.com"
+        android:textColor="@color/blueButton"
+        android:layout_toRightOf="@id/txtEmail"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="100dp"/>
+    <TextView
+        android:id="@+id/txtAadhar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtEmail"
+        android:text="Aadhar ID"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"/>
+
+    <TextView
+        android:id="@+id/txtSAadhar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtFEmail"
+        android:layout_marginLeft="91dp"
+        android:textColor="#000000"
+        android:text="123456788"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/txtAadhar" />
+    <CheckBox
+        android:id="@+id/chAgree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I have read and Agree with the"
+        android:layout_below="@id/txtAadhar"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="terms &amp; Condition"
+        android:layout_toRightOf="@id/chAgree"
+        android:layout_below="@id/txtSAadhar"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="15sp"
+        android:textColor="@color/blueButton"/>
+    <Button
+        android:id="@+id/btnSSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="Submit"
+        android:layout_below="@id/chAgree"
+        android:background="@color/green"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:src="@drawable/imgdown"
+        android:layout_alignParentBottom="true"/>
+
+
+
+</RelativeLayout>

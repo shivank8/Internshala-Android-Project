@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registration"
+    android:background="@color/whiteBack">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:src="@color/green" />
+
+    <ImageView
+        android:layout_width="10dp"
+        android:layout_height="match_parent"
+        android:src="@color/green"
+        android:layout_alignParentLeft="true"/>
+    <ImageView
+        android:layout_width="10dp"
+        android:layout_height="match_parent"
+        android:src="@color/green"
+        android:layout_alignParentRight="true"/>
+
+    <ImageView
+        android:id="@+id/imgBottom"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:src="#ffff"
+        android:layout_alignParentBottom="true"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:layout_above="@+id/imgBottom"
+        android:src="@color/green" />
+
+
+    <ImageView
+        android:id="@+id/imgTop"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:src="@drawable/img"
+        android:layout_alignParentTop="true"/>
+
+
+    <ImageView
+        android:id="@+id/imgProgress"
+        android:layout_width="386dp"
+        android:layout_height="65dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/imgTop"
+        android:layout_marginTop="19dp"
+        android:src="@drawable/progress1" />
+    <EditText
+        android:id="@+id/etID"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:maxLines="1"
+        android:hint="@string/enter_your_aadhar_id"
+        android:layout_below="@id/imgProgress"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="28dp"/>
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:hint="Enter Your Name*"
+        android:layout_below="@id/etID"
+        android:maxLines="1"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="28dp"/>
+    <EditText
+        android:id="@+id/etAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:hint="Enter Your Address"
+        android:layout_below="@id/etName"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="22dp"/>
+    <EditText
+        android:id="@+id/etPincode"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:maxLines="1"
+        android:hint="Pin code              "
+        android:layout_below="@id/etName"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="28dp"
+        android:layout_alignParentRight="true"/>
+
+    <Button
+        android:id="@+id/btnLocationPicker"
+        android:layout_width="34dp"
+        android:layout_height="36dp"
+        android:layout_below="@id/etName"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@id/etPincode"
+        android:background="@drawable/my_location"
+        android:clickable="true" />
+
+    <EditText
+        android:id="@+id/etNumber"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:maxLines="1"
+        android:hint="Enter Your Mobile Number*"
+        android:layout_below="@id/etAddress"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:maxLength="10"
+        android:layout_marginRight="28dp"/>
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:hint="Enter Email id"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:layout_below="@id/etNumber"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="28dp"/>
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:hint="Enter Password*"
+        android:layout_below="@id/etEmail"
+        android:maxLines="1"
+        android:layout_marginLeft="30dp"
+        android:inputType="textPassword"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="28dp"/>
+    <EditText
+        android:id="@+id/etRePassword"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:hint="Re-enter Password*"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:layout_below="@id/etPassword"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="28dp"/>
+    <Button
+        android:id="@+id/btnnext"
+        android:layout_width="60dp"
+        android:layout_height="24dp"
+        android:text="Next"
+        android:background="@color/green"
+        android:layout_below="@id/etRePassword"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/txtTestname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnnext"
+        android:layout_centerInParent="true"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:src="@drawable/imgdown"
+        android:layout_alignParentBottom="true"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:src="@drawable/imgdown"
+        android:layout_alignParentBottom="true"/>
+
+
+
+</RelativeLayout>

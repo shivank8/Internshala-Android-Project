@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Shivank Verma</string>
+    <string name="shop_to_online">Get Your Shop to Online</string>
+    <string name="delivery_partner">Start Your Career as a Delivery Partner</string>
+    <string name="customer_registration">Customer Registration:</string>
+    <string name="Partner_registration">Partner Registration:</string>
+    <string name="enter_your_aadhar_id">Enter Your Aadhar ID</string>
+    <string name="i_have_aadhar_card">I have Aadhar card</string>
+    <string name="vehicle_type">!Which Types of vehicle you have?</string>
+    <string name="upload_front_image_of_shop">Upload Front Image of shop    </string>
+    <string name="install_your_admin_panel"><![CDATA[Thank You for Connect with Us. Please Download & install your Admin Panel]]></string>
+    <string name="title_activity_choose_location">Map</string>
+</resources>

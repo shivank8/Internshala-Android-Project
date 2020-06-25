@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registration"
+    android:background="@color/whiteBack">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:src="@color/green" />
+
+    <ImageView
+        android:layout_width="10dp"
+        android:layout_height="match_parent"
+        android:src="@color/green"
+        android:layout_alignParentLeft="true"/>
+    <ImageView
+        android:layout_width="10dp"
+        android:layout_height="match_parent"
+        android:src="@color/green"
+        android:layout_alignParentRight="true"/>
+
+    <ImageView
+        android:id="@+id/imgBottom"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:src="#ffff"
+        android:layout_alignParentBottom="true"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:layout_above="@+id/imgBottom"
+        android:src="@color/green" />
+
+
+    <ImageView
+        android:id="@+id/imgTop"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:src="@drawable/img"
+        android:layout_alignParentTop="true"/>
+    <ImageView
+        android:id="@+id/imgProgress3"
+        android:layout_width="320dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/imgTop"
+        android:src="@drawable/progress3"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"/>
+    <ImageView
+        android:id="@+id/imgShowDL"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/imgProgress3"
+        android:layout_centerInParent="true"/>
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:src="@drawable/imgdown"
+        android:layout_alignParentBottom="true"/>
+    <TextView
+        android:id="@+id/txtname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgShowDL"
+        android:text="Name"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"/>
+
+    <TextView
+        android:id="@+id/txtFname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgShowDL"
+        android:layout_marginStart="115dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="13dp"
+        android:layout_toRightOf="@id/txtname" />
+
+    <TextView
+        android:id="@+id/txtAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtname"
+        android:text="Address"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"/>
+    <TextView
+        android:id="@+id/txtFAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtFname"
+        android:layout_toRightOf="@id/txtAddress"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="100dp"/>
+    <TextView
+        android:id="@+id/txtMobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtAddress"
+        android:text="Mobile No"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"/>
+
+    <TextView
+        android:id="@+id/txtFmobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtFAddress"
+        android:layout_marginLeft="87dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/txtMobile" />
+
+    <TextView
+        android:id="@+id/txtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtMobile"
+        android:text="Email ID"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"/>
+    <TextView
+        android:id="@+id/txtFEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtFmobile"
+        android:textColor="@color/blueButton"
+        android:layout_toRightOf="@id/txtEmail"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="100dp"/>
+    <TextView
+        android:id="@+id/txtAadhar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtEmail"
+        android:text="Aadhar ID"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"/>
+
+    <TextView
+        android:id="@+id/txtFAadhar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtFEmail"
+        android:layout_marginLeft="91dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/txtAadhar" />
+
+    <TextView
+        android:id="@+id/txtVehicletype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtAadhar"
+        android:text="Driving through"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"/>
+
+    <TextView
+        android:id="@+id/txtFVehicletype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtFAadhar"
+        android:layout_marginLeft="54dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/txtVehicletype" />
+
+    <TextView
+        android:id="@+id/txtDlNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtVehicletype"
+        android:text="Driving Licence No"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"/>
+    <TextView
+        android:id="@+id/txtFDlno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtVehicletype"
+        android:layout_toRightOf="@id/txtDlNo"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"/>
+    <TextView
+        android:id="@+id/txtVehicleNO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtDlNo"
+        android:text="Vehicle NO"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"/>
+
+    <TextView
+        android:id="@+id/txtFVehicleNO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtFDlno"
+        android:layout_marginLeft="87dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/txtVehicleNO" />
+    <CheckBox
+        android:id="@+id/chAgree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I have read and Agree with the"
+        android:layout_below="@id/txtVehicleNO"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="terms &amp; Condition"
+        android:layout_toRightOf="@id/chAgree"
+        android:layout_below="@id/txtFVehicleNO"
+        android:layout_marginTop="22dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="15sp"
+        android:textColor="@color/blueButton"/>
+    <Button
+        android:id="@+id/btnFSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="Submit"
+        android:layout_below="@id/chAgree"
+        android:background="@color/green"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"/>
+
+
+</RelativeLayout>
